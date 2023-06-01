@@ -31,6 +31,12 @@ jobs:
 
     needs: build
 
+    strategy:
+      matrix:
+        browser: [chrome, firefox]
+        device: [desktop, mobile]
+
+
     env:
       NAME: Planet
 
